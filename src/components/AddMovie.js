@@ -35,7 +35,8 @@ function AddMovie(props) {
         <label htmlFor='date'>Release Date</label>
         <input type='text' id='date' ref={releaseDateRef} required={true} />
       </div>
-      <button>Add Movie</button>
+      <button type='submit'>Add Movie</button>
+      <button type='button' onClick={props.onFetchMovie}>Fetch Movies</button>
     </form>
   );
 }

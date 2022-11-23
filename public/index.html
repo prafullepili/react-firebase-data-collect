@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -24,12 +22,101 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
+  <title>React App</title>
+  <style>
+    section {
+      margin: 1rem auto;
+      width: 90%;
+      max-width: 40rem;
+      text-align: center;
+      background-color: white;
+      padding: 2rem;
+      border-radius: 12px;
+    }
+
+    button {
+      font: inherit;
+      cursor: pointer;
+      background: #230052;
+      border: 1px solid #230052;
+      color: white;
+      padding: 0.75rem 2rem;
+      margin: 0rem 2rem;
+      border-radius: 20px;
+
+    }
+
+    button:focus {
+      outline: none;
+    }
+
+    button:hover,
+    button:active {
+      background-color: #460897;
+      border-color: #460897;
+    }
+
+    .movie {
+      margin: 1rem 0;
+      padding: .1rem 0;
+      background-color: #000000d4;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+      border-radius: 12px;
+      text-align: center;
+      color: white;
+    }
+
+    .movie h2 {
+      font-size: 2rem;
+      margin: 1rem;
+      color: #eae8cd;
+    }
+
+    .movie h3 {
+      color: #eccf77;
+      margin: 0;
+      font-size: 1rem;
+    }
+
+    .control {
+      margin: 1rem 0;
+    }
+
+    .control label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      text-align: left;
+    }
+
+    .control input,
+    .control textarea {
+      display: block;
+      width: 100%;
+      font: inherit;
+      padding: 0.2rem;
+      border-radius: 12px;
+      border: 1px solid #ccc;
+    }
+
+    .control input:focus,
+    .control textarea:focus {
+      outline: none;
+      border-color: #230052;
+    }
+
+    .movies-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -39,5 +126,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+</body>
+
 </html>
